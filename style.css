@@ -1,0 +1,76 @@
+:root {
+    --main-color: linear-gradient(to top, rgba(247, 121, 125, 0.19), rgb(251, 215, 134), rgb(198, 255, 221));
+}
+
+
+
+/* Set height of body and the document to 100% */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+/* Style tab links */
+
+
+
+.tablink {
+    background-color: rgba(225, 121, 121, 0.197);
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+
+
+}
+
+.tablink:hover {
+    background-color: rgba(225, 121, 121, 0.389);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 100px 20px;
+
+}
+
+
+
+#message {
+    background-color: #0f2342;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.tabcontent img {
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+}
+
+#Home #News #Contact #About {
+    background: var(--main-color);
+}
