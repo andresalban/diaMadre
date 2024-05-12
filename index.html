@@ -4,61 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <button class="tablink" onclick="openPage('Home', this, '')">Home</button>
-    <button class="tablink" onclick="openPage('News', this, '')" id="defaultOpen">News</button>
-    <button class="tablink" onclick="openPage('Contact', this, '')">Contact</button>
-    <button class="tablink" onclick="openPage('About', this, '')">About</button>
+    <header>
+        <button class="tablink" onclick="openPage('Feliz')">Feliz</button>
+        <button class="tablink" onclick="openPage('Dia')" id="defaultOpen">Dia</button>
+        <button class="tablink" onclick="openPage('De')">De La</button>
+        <button class="tablink" onclick="openPage('Madre')">Madre</button>
+    
 
+    </header>
+   
+    <main>
+        <div id="Feliz" class="tabcontent">
+            <section id='message'>
+                <p>"El amor de una madre de</p>
+                <p>es la fuerza más poderosa </p>
+                <p> la naturaleza"</p>
+                <h1>❤️¡Feliz día de la madre!❤️</h1>
+            </section>
+    
+            <img src="img/imagen1.jpg" alt="DiaDeLaMadre" >
+        </div>
+    
+        <div id="Dia" class="tabcontent">
+            <section id='message'>
+                <p>"Madre es un verbo.</p>
+                <p>Es algo que haces,</p>
+                <p>no algo que eres."</p>
+                <h1>❤️¡Feliz día de la madre!❤️</h1>            
+            </section>
+            <img src="img/imagen2.jpg" alt="DiaDeLaMadre" >
+        </div>
+    
+        <div id="De" class="tabcontent">
+            <section id='message'>
+                <p>"El único amor que realmente</p>
+                <p>creo en el amor de una </p>
+                <p>madre por sus hijos."</p>
+                <h1>❤️¡Feliz día de la madre!❤️</h1>
+            </section>
+            <img src="img/imagen3.jpg" alt="DiaDeLaMadre" >
+        </div>
+    
+        <div id="Madre" class="tabcontent">
+            <section id='message'>
+                <p>Para la mejor madre del mundo </p>
+                <p>Te quiero</p>
+                <h1>❤️¡Feliz día de la madre!</h1>
+                <h1>De Andres que te quiere mucho ❤️</h1>
+            </section>
+            <img src="img/Imagen4.jpg" alt="DiaDeLaMadre" >
+        </div>
+       
+    </main>
+    
+    
 
-    <div id="Home" class="tabcontent">
-        <section id='message'>
-            <img src="" alt="" srcset="">
-            <h1>Para la mejor madre del mundo 1</h1>
-            <h2>Te quiero ❤️</h2>
-            <h1>¡Feliz día de la madre!</h1>
-            <h1>De tu hijo que te quiere mucho ❤️</h1>
-        </section>
-
-        <img src="https://img.freepik.com/vector-gratis/diseno-plano-flores-hojas-lineales_23-2149074732.jpg?t=st=1715484990~exp=1715488590~hmac=288851bf5abcf6f383fdcbcd7d48d132aeb80088a825c148df0cba03ae3754c7&w=740" alt="" >
-    </div>
-
-    <div id="News" class="tabcontent">
-        <section id='message'>
-            <img src="" alt="" srcset="">
-            <h1>Para la mejor madre del mundo 2</h1>
-            <h2>Te quiero ❤️</h2>
-            <h1>¡Feliz día de la madre!</h1>
-            <h1>De tu hijo que te quiere mucho ❤️</h1>
-        </section>
-        <img src="https://img.freepik.com/vector-gratis/diseno-plano-flores-hojas-lineales_23-2149074732.jpg?t=st=1715484990~exp=1715488590~hmac=288851bf5abcf6f383fdcbcd7d48d132aeb80088a825c148df0cba03ae3754c7&w=740" alt="" >
-    </div>
-
-    <div id="Contact" class="tabcontent">
-        <section id='message'>
-            <img src="" alt="" srcset="">
-            <h1>Para la mejor madre del mundo 3</h1>
-            <h2>Te quiero ❤️</h2>
-            <h1>¡Feliz día de la madre!</h1>
-            <h1>De tu hijo que te quiere mucho ❤️</h1>
-        </section>
-        <img src="https://img.freepik.com/vector-gratis/diseno-plano-flores-hojas-lineales_23-2149074732.jpg?t=st=1715484990~exp=1715488590~hmac=288851bf5abcf6f383fdcbcd7d48d132aeb80088a825c148df0cba03ae3754c7&w=740" alt="" >
-    </div>
-
-    <div id="About" class="tabcontent">
-        <section id='message'>
-            <img src="" alt="" srcset="">
-            <h1>Para la mejor madre del mundo 4</h1>
-            <h2>Te quiero ❤️</h2>
-            <h1>¡Feliz día de la madre!</h1>
-            <h1>De tu hijo que te quiere mucho ❤️</h1>
-        </section>
-        <img src="https://img.freepik.com/vector-gratis/diseno-plano-flores-hojas-lineales_23-2149074732.jpg?t=st=1715484990~exp=1715488590~hmac=288851bf5abcf6f383fdcbcd7d48d132aeb80088a825c148df0cba03ae3754c7&w=740" alt="" >
-    </div>
    <script src="script.js"></script>
 </body>
 
