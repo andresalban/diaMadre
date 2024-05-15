@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Major+Mono+Display&family=Passero+One&family=Poetsen+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -17,19 +15,16 @@
 
 <body>
     <header>
+        <ul class="tablink">
+            <li class="tablink_item" onclick="openPage('Feliz')" id="defaultOpen">Feliz</li>
+            <li class="tablink_item" onclick="openPage('Dia')">Dia</li>
+            <li class="tablink_item" onclick="openPage('De')">De La</li>
+            <li class="tablink_item" onclick="openPage('Madre')">Madre</li>
+        </ul>
 
-        <nav>
 
-            <ul class="tablink">
-                <li class="tablink_item" onclick="openPage('Feliz')" id="defaultOpen">Feliz</li>
-                <li class="tablink_item" onclick="openPage('Dia')">Dia</li>
-                <li class="tablink_item" onclick="openPage('De')">De La</li>
-                <li class="tablink_item" onclick="openPage('Madre')">Madre</li>
-            </ul>
-        </nav>
-      
-        
-       
+
+
     </header>
 
     <main>
@@ -105,7 +100,7 @@
                 <div class="card-footer">
                     <p class="text">❤️¡Feliz día de la madre!❤️</p>
                     <p class="text">De Andres que te quiere mucho</p>
-                    
+
                 </div>
             </div>
 
@@ -115,6 +110,11 @@
 
     </main>
 
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Andrés Albán</p>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>

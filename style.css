@@ -1,10 +1,7 @@
-:root {
-    --main-color: linear-gradient(to top, rgba(247, 121, 125, 0.19), rgb(251, 215, 134), rgb(198, 255, 221));
-}
 
 body,
 html {
-    background-image: linear-gradient(to top, #f7797d, #fbd786, #C6FFDD);
+    background-image: linear-gradient(to top, #f7797d, #fbd786, #c6ffdd);
     background-repeat: no-repeat;
     height: 100%;
 }
@@ -15,8 +12,6 @@ li {
     list-style: none;
 }
 
-
-/* Style tab links */
 
 header {
     display: flex;
@@ -37,7 +32,8 @@ header {
     gap: 30px;
     font-size: 20px;
     margin: 10px;
-    font-family: "Noto Sans Display", sans-serif;
+    font-family: "Passero One", sans-serif;
+    font-weight: 400;
     font-style: normal;
     cursor: pointer;
 }
@@ -56,11 +52,6 @@ header {
     margin-top: 20px;
 }
 
-
-#Feliz #Dia #De #Madre {
-    background: var(--main-color);
-}
-
 .card {
     width: 300px;
     padding: 12px;
@@ -69,6 +60,9 @@ header {
     overflow: visible;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
     background: rgba(249, 255, 129, 0.5);
     backdrop-filter: blur(10px);
 
@@ -102,7 +96,7 @@ header {
     align-items: center;
     flex-flow: column wrap;
     border-top: 5px dotted #ffffff;
-    
+
 }
 
 .text {
@@ -113,4 +107,23 @@ header {
     font-family: "Courgette", cursive;
     font-style: bold;
     font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+    background-color: rgba(198, 255, 221, 0.3);
+    padding: 10px;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
