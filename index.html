@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -15,61 +17,107 @@
 
 <body>
     <header>
-        <button class="tablink" onclick="openPage('Feliz')" id="defaultOpen">Feliz</button>
-        <button class="tablink" onclick="openPage('Dia')" >Dia</button>
-        <button class="tablink" onclick="openPage('De')">De La</button>
-        <button class="tablink" onclick="openPage('Madre')">Madre</button>
-    
 
+        <nav>
+
+            <ul class="tablink">
+                <li class="tablink_item" onclick="openPage('Feliz')" id="defaultOpen">Feliz</li>
+                <li class="tablink_item" onclick="openPage('Dia')">Dia</li>
+                <li class="tablink_item" onclick="openPage('De')">De La</li>
+                <li class="tablink_item" onclick="openPage('Madre')">Madre</li>
+            </ul>
+        </nav>
+      
+        
+       
     </header>
-   
+
     <main>
         <div id="Feliz" class="tabcontent">
-            <section id='message'>
-                <p>"El amor de una madre de</p>
-                <p>es la fuerza más poderosa </p>
-                <p> la naturaleza"</p>
-                <h1>❤️¡Feliz día de la madre!❤️</h1>
-            </section>
-    
-            <img src="img/imagen1.jpg" alt="DiaDeLaMadre" >
-        </div>
-    
-        <div id="Dia" class="tabcontent">
-            <section id='message'>
-                <p>"Madre es un verbo.</p>
-                <p>Es algo que haces,</p>
-                <p>no algo que eres."</p>
-                <h1>❤️¡Feliz día de la madre!❤️</h1>            
-            </section>
-            <img src="img/imagen2.jpg" alt="DiaDeLaMadre" >
-        </div>
-    
-        <div id="De" class="tabcontent">
-            <section id='message'>
-                <p>"El único amor que realmente</p>
-                <p>creo en el amor de una </p>
-                <p>madre por sus hijos."</p>
-                <h1>❤️¡Feliz día de la madre!❤️</h1>
-            </section>
-            <img src="img/imagen3.jpg" alt="DiaDeLaMadre" >
-        </div>
-    
-        <div id="Madre" class="tabcontent">
-            <section id='message'>
-                <p>Para la mejor madre del mundo </p>
-                <p>Te quiero</p>
-                <h1>❤️¡Feliz día de la madre!</h1>
-                <h1>De Andres que te quiere mucho ❤️</h1>
-            </section>
-            <img src="img/Imagen4.jpg" alt="DiaDeLaMadre" >
-        </div>
-       
-    </main>
-    
-    
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/imagen1.jpg" alt="DiaDeLaMadre">
+                </div>
+                <div class="card-info">
+                    <p>"El amor de una madre</p>
+                    <p>es la fuerza más poderosa </p>
+                    <p> la naturaleza"</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text">❤️¡Feliz día de la madre!❤️</span>
+                </div>
+            </div>
 
-   <script src="script.js"></script>
+
+
+
+        </div>
+
+        <div id="Dia" class="tabcontent">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/imagen2.jpg" alt="DiaDeLaMadre">
+                </div>
+                <div class="card-info">
+                    <p>"Madre es un verbo.</p>
+                    <p>Es algo que haces,</p>
+                    <p>no algo que eres."</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text">❤️¡Feliz día de la madre!❤️</span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="De" class="tabcontent">
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/imagen3.jpg" alt="DiaDeLaMadre">
+                </div>
+                <div class="card-info">
+                    <p>"El único amor que realmente</p>
+                    <p>creo en el amor de una </p>
+                    <p>madre por sus hijos."</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text">❤️¡Feliz día de la madre!❤️</span>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div id="Madre" class="tabcontent">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/Imagen4.jpg" alt="DiaDeLaMadre">
+                </div>
+                <div class="card-info">
+                    <p>Para la mejor madre del mundo </p>
+                    <p>Te quiero</p>
+                </div>
+                <div class="card-footer">
+                    <p class="text">❤️¡Feliz día de la madre!❤️</p>
+                    <p class="text">De Andres que te quiere mucho</p>
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

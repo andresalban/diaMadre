@@ -2,47 +2,50 @@
     --main-color: linear-gradient(to top, rgba(247, 121, 125, 0.19), rgb(251, 215, 134), rgb(198, 255, 221));
 }
 
-
-
-/* Set height of body and the document to 100% */
 body,
 html {
-    background-image: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);
+    background-image: linear-gradient(to top, #f7797d, #fbd786, #C6FFDD);
     background-repeat: no-repeat;
-    background-size: auto;
     height: 100%;
-
 }
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
 
 /* Style tab links */
 
-
-
-.tablink {
-    background-color: rgba(225, 121, 121, 0.197);
-    color: black;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 16px;
-    font-size: 17px;
-    width: 25%;
-   
-    font-family: "Noto Sans Display", sans-serif;
-    font-style: normal;
-      
-      
-      
-
-
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tablink:hover {
+.tablink {
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 0px 0px 25px 25px;
+    background-color: rgba(225, 121, 121, 0.197);
+}
+
+.tablink_item {
+    border-radius: 50px;
+    padding: 10px;
+    gap: 30px;
+    font-size: 20px;
+    margin: 10px;
+    font-family: "Noto Sans Display", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.tablink_item:hover {
     background-color: rgba(225, 121, 121, 0.389);
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
     display: flex;
     flex-flow: column wrap;
@@ -53,37 +56,61 @@ html {
     margin-top: 20px;
 }
 
-#message {
-    background-color: #0f2342;
-    color: #ffffff;
-    border-radius: 5px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    flex-flow: column wrap;
-    width: 300px;
-    padding: 20px;
-    gap: 20px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-
-#message h1 {
-    font-family: "Courgette", cursive;
-    font-weight: 400;
-    font-style: bold;
-}
-
-.tabcontent img {
-    border-radius: 5px;
-    width: 300px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
 
 #Feliz #Dia #De #Madre {
     background: var(--main-color);
 }
 
+.card {
+    width: 300px;
+    padding: 12px;
+    border-radius: 15px;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    font-family: "Poetsen One", sans-serif;
+    background: rgba(249, 255, 129, 0.5);
+    backdrop-filter: blur(10px);
+
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-img img {
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card-info {
+    padding-top: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    border-top: 5px dotted #ffffff;
+    
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-family: "Courgette", cursive;
+    font-style: bold;
+    font-size: 20px;
+}
